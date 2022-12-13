@@ -28,10 +28,7 @@ function stringEnhancer ( string $text, string $enhancer = '**'): string
     return "$enhancer$text$enhancer";
 }
 
-var_dump()
 
-//4UZD
 
-//5UZD
 
 
