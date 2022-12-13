@@ -23,3 +23,11 @@ arrayPrinter ($arr); //iskviecia funkcija
 
 //3UZD
 
+function stringEnhancer ( string $text, string $enhancer): string 
+{
+    $text = "labas";
+    $enhancer = "ate";
+    return '$enhancer$text$enhancer';
+}
+
+stringEnhancer($text, $enhancer);
