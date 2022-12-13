@@ -21,13 +21,15 @@ function arrayPrinter(array $list): void {
 
 arrayPrinter ($arr); //iskviecia funkcija
 
-//3UZD
+//3UZD //uzbaigt
 
-function stringEnhancer ( string $text, string $enhancer): string 
+function stringEnhancer ( string $text, string $enhancer = '**'): string 
 {
-    $text = "labas";
-    $enhancer = "ate";
-    return '$enhancer$text$enhancer';
+    return "$enhancer$text$enhancer";
 }
 
-stringEnhancer($text, $enhancer);
+var_dump()
+
+//4UZD
+
+//5UZD
