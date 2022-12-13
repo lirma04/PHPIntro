@@ -19,3 +19,7 @@ function arrayPrinter(array $list): void {
     }
 }
 
+arrayPrinter ($arr); //iskviecia funkcija
+
+//3UZD
+
