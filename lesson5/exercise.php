@@ -23,12 +23,52 @@ arrayPrinter ($arr); //iskviecia funkcija
 
 //3UZD //uzbaigt
 
-function stringEnhancer ( string $text, string $enhancer = '**'): string 
+// function stringEnhancer ( string $text, string $enhancer = '**'): string 
+// {
+//     return "$enhancer$text$enhancer";
+// }
+
+// var_dump(stringEnhancer('some text', '##')).PHP_EOL;
+// var_dump(stringEnhancer('some text')).PHP_EOL;
+
+//kitas budas PASIBANDYTI
+
+
+
+
+//4UZD
+
+// function stringModifier(string $text, string $modifier):string
+// {
+//     return $modifier . $text . $modifier;
+// }
+
+// $x = 'some text';
+// $x = stringModifier($x, '$$');
+
+// echo $x.PHP_EOL;
+
+//kitas budas 
+
+function stringModifier(string &$text, string $modifier): void
 {
-    return "$enhancer$text$enhancer";
+    $text = $modifier . $text . $modifier;
 }
 
+$x = 'some text';
+echo $x.PHP_EOL;
+stringModifier($x, '$$');
+echo $x.PHP_EOL;
 
 
+//5UZD
 
+function textReplicator(string &$text, int $replicate = 1):void
+{
+    $text = $text * $replicate;
+}
 
+$x = 'some_text';
+echo $x.PHP_EOL;
+textReplicator($x, 3);
+echo $x.'-'.PHP_EOL;
